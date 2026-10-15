@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Huawei cipher utility</title>
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/constants.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.min.js" integrity="sha512-PEsccDx9jqX6Dh4wZDCnWMaIO3gAaU0j46W//sSqQhUQxky6/eHZyeB3NrXD2xsyugAKd4KPiDANkcuoEa2JuA==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<noscript>
+		<h1>Huawei cipher utility</h1>
+		<h2>This page performs all computations on the browser and thus required javascript to be enabled.</h2>
+	</noscript>
+	<main>
+		<div id="cipher">
+			<h1 class="content">Cipher Decipher</h1>
+			<div class="divider"></div>
+			<div class="content">
+				<p class="input-description"> In this page you can cipher and decipher strings with the same method as Huawei uses in their configuration</p>
+				<div class="input-description">
+					Input:
+					<input id="CipherInputField" class="user-input" placeholder="input" type="text" oninput="OnCipherInputChange()" value>
+				</div>
+				<div class="input-description">
+					Function:
+					<select id="CipherFunctionField" name="cipherfunction" class="user-input" onchange="OnCipherInputChange()">
+						<option value="1">Decipher</option>
+						<option value="2">Cipher</option>
+					</select>
+				</div>
+				<div class="input-description">
+					Result:
+					<input id="CipherResultField" class="user-input no-input" placeholder="result" type="text" value disabled>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
